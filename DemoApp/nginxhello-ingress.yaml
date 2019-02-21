@@ -6,10 +6,10 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-  - host: a49c304c01b0f11e9b1040a2470aca0f-777763175.eu-west-1.elb.amazonaws.com
+  - host: nginxhello.com
     http:
       paths:
-      - path: /nginx
+      - path: /
         backend:
           serviceName: nginxhello-svc
           servicePort: 80
