@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo-ingress-nginx
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: a49c304c01b0f11e9b1040a2470aca0f-777763175.eu-west-1.elb.amazonaws.com
+    http:
+      paths:
+      - path: /nginx
+        backend:
+          serviceName: nginxhello-svc
+          servicePort: 80
