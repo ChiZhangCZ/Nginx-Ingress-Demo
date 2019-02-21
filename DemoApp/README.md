@@ -1,11 +1,11 @@
-#Example Web Application
+# Example Web Application
 
 Based on files and instructions from: http://rahmonov.me/posts/nginx-ingress-controller/
 Tested on AWS EKS cluster with Nginx Ingress Controller installed.
 
 YAML files required to deploy and connect to sample backend with Kubernetes and Nginx Ingress Controller. 
 
-#Installation
+# Installation
 
 Create sample backend deployment:
 ```
@@ -22,7 +22,7 @@ Create Ingress to specify our path rules:
 kubectl create -f nginxhello-ingress.yaml
 ```
 
-#Testing
+# Testing
 
 Find your Nginx Ingress Controller's External IP by the command:
 ```
@@ -31,7 +31,7 @@ kubectl get svc --namespace=ingress-nginx
 
 Note: If you are running kubernetes on AWS, you will see a load balancer DNS instead of an IP, to get the IP you need run:
 ```
-nslookup <LoadBalancerDNS>
+nslookup <Load Balancer DNS>
 
 ```
 Configure the DNS names by appending your /etc/hosts file with:
