@@ -33,7 +33,6 @@ kubectl get svc --namespace=ingress-nginx
 Note: If you are running kubernetes on AWS, you will see a load balancer DNS instead of an IP, to get the IP you need run:
 ```
 nslookup <Load Balancer DNS>
-
 ```
 Configure the DNS names by appending your /etc/hosts file with:
 ```
